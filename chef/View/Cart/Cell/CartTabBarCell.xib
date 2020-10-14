@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Sailec Medium.otf">
+            <string>Sailec-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CartTabBarCell" id="gTV-IL-0wX" customClass="CartTabBarCell" customModule="chef" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="296" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="296" height="70"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VuT-d9-FUp">
+                        <rect key="frame" x="0.0" y="0.0" width="296" height="70"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XLP-be-1ag">
+                                <rect key="frame" x="0.0" y="0.0" width="296" height="69"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Sailec-Medium" family="Sailec" pointSize="14"/>
+                                <color key="textColor" red="0.23137254901960785" green="0.23137254901960785" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6At-RI-Dh5">
+                                <rect key="frame" x="0.0" y="69" width="296" height="1"/>
+                                <color key="backgroundColor" red="0.91764705879999997" green="0.1137254902" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="6An-Lo-WsL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XLP-be-1ag" firstAttribute="leading" secondItem="VuT-d9-FUp" secondAttribute="leading" id="CED-np-l5U"/>
+                            <constraint firstItem="6At-RI-Dh5" firstAttribute="leading" secondItem="VuT-d9-FUp" secondAttribute="leading" id="VAb-zf-sxB"/>
+                            <constraint firstAttribute="trailing" secondItem="XLP-be-1ag" secondAttribute="trailing" id="dD7-2n-soO"/>
+                            <constraint firstItem="XLP-be-1ag" firstAttribute="top" secondItem="VuT-d9-FUp" secondAttribute="top" id="eKg-7J-6nn"/>
+                            <constraint firstAttribute="trailing" secondItem="6At-RI-Dh5" secondAttribute="trailing" id="ewf-PM-Ga1"/>
+                            <constraint firstAttribute="bottom" secondItem="6At-RI-Dh5" secondAttribute="bottom" id="kQ3-wa-mVK"/>
+                            <constraint firstItem="6At-RI-Dh5" firstAttribute="top" secondItem="XLP-be-1ag" secondAttribute="bottom" id="m8l-OZ-0wc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="VuT-d9-FUp" secondAttribute="trailing" id="7Sq-xV-OHJ"/>
+                <constraint firstAttribute="bottom" secondItem="VuT-d9-FUp" secondAttribute="bottom" id="FrD-pa-a6E"/>
+                <constraint firstItem="VuT-d9-FUp" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="HBl-13-OLr"/>
+                <constraint firstItem="VuT-d9-FUp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="aRy-gP-KMg"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="296" height="70"/>
+            <connections>
+                <outlet property="lblTitle" destination="XLP-be-1ag" id="eST-dD-G17"/>
+                <outlet property="uivContainer" destination="VuT-d9-FUp" id="3Tp-r3-5en"/>
+                <outlet property="uivIndicator" destination="6At-RI-Dh5" id="cEe-W1-AOh"/>
+            </connections>
+            <point key="canvasLocation" x="314.49275362318843" y="94.419642857142847"/>
+        </collectionViewCell>
+    </objects>
+</document>

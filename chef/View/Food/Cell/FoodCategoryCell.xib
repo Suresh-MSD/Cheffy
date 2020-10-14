@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Sailec Medium.otf">
+            <string>Sailec-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FoodCategoryCell" id="gTV-IL-0wX" customClass="FoodCategoryCell" customModule="Chef" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="231" height="143"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="231" height="143"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QHW-7p-BXa">
+                        <rect key="frame" x="5" y="0.0" width="221" height="143"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_food_four" translatesAutoresizingMaskIntoConstraints="NO" id="1DZ-Gw-ZED">
+                                <rect key="frame" x="0.0" y="0.0" width="221" height="143"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="7.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pya-gk-orc" userLabel="overlay">
+                                <rect key="frame" x="0.0" y="0.0" width="221" height="143"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="7.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cri-ib-nDK">
+                                <rect key="frame" x="0.0" y="0.0" width="221" height="143"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="7.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zv7-sP-8qi">
+                                <rect key="frame" x="67.5" y="60" width="86" height="23"/>
+                                <fontDescription key="fontDescription" name="Sailec-Medium" family="Sailec" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Pya-gk-orc" secondAttribute="trailing" id="5Uu-Di-OXu"/>
+                            <constraint firstItem="zv7-sP-8qi" firstAttribute="centerX" secondItem="QHW-7p-BXa" secondAttribute="centerX" id="7r3-wo-V95"/>
+                            <constraint firstItem="cri-ib-nDK" firstAttribute="top" secondItem="QHW-7p-BXa" secondAttribute="top" id="B2v-om-Ef2"/>
+                            <constraint firstItem="Pya-gk-orc" firstAttribute="leading" secondItem="QHW-7p-BXa" secondAttribute="leading" id="EPh-Em-Aie"/>
+                            <constraint firstAttribute="bottom" secondItem="cri-ib-nDK" secondAttribute="bottom" id="GG0-8O-M5c"/>
+                            <constraint firstItem="cri-ib-nDK" firstAttribute="leading" secondItem="QHW-7p-BXa" secondAttribute="leading" id="Ojn-Mb-pv1"/>
+                            <constraint firstItem="1DZ-Gw-ZED" firstAttribute="leading" secondItem="QHW-7p-BXa" secondAttribute="leading" id="SPS-Ag-8QE"/>
+                            <constraint firstAttribute="trailing" secondItem="cri-ib-nDK" secondAttribute="trailing" id="ULv-0c-xYw"/>
+                            <constraint firstItem="zv7-sP-8qi" firstAttribute="centerY" secondItem="QHW-7p-BXa" secondAttribute="centerY" id="eQS-U6-1A1"/>
+                            <constraint firstItem="Pya-gk-orc" firstAttribute="top" secondItem="QHW-7p-BXa" secondAttribute="top" id="h5s-Pt-Rak"/>
+                            <constraint firstItem="1DZ-Gw-ZED" firstAttribute="top" secondItem="QHW-7p-BXa" secondAttribute="top" id="lfQ-8O-1OB"/>
+                            <constraint firstAttribute="trailing" secondItem="1DZ-Gw-ZED" secondAttribute="trailing" id="nH1-SU-07e"/>
+                            <constraint firstAttribute="bottom" secondItem="1DZ-Gw-ZED" secondAttribute="bottom" id="qje-YW-D9X"/>
+                            <constraint firstAttribute="bottom" secondItem="Pya-gk-orc" secondAttribute="bottom" id="uEK-G5-K9d"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="7.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="QHW-7p-BXa" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="DEN-Ql-Oc1"/>
+                <constraint firstAttribute="bottom" secondItem="QHW-7p-BXa" secondAttribute="bottom" id="Gxd-nU-UsE"/>
+                <constraint firstItem="QHW-7p-BXa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="nhC-yA-KOp"/>
+                <constraint firstAttribute="trailing" secondItem="QHW-7p-BXa" secondAttribute="trailing" constant="5" id="xv7-tL-v10"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="231" height="143"/>
+            <connections>
+                <outlet property="highlightView" destination="cri-ib-nDK" id="PYi-BK-asJ"/>
+                <outlet property="ivFeaturedImage" destination="1DZ-Gw-ZED" id="cUm-sR-iNC"/>
+                <outlet property="lblCategory" destination="zv7-sP-8qi" id="afs-aN-gQ9"/>
+                <outlet property="uivContainer" destination="QHW-7p-BXa" id="XhU-t0-UJe"/>
+            </connections>
+            <point key="canvasLocation" x="268.84057971014494" y="119.53125"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="img_food_four" width="1350" height="900"/>
+    </resources>
+</document>

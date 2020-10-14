@@ -1,0 +1,6 @@
+framework module Pods_chefTests {
+  umbrella header "Pods-chefTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

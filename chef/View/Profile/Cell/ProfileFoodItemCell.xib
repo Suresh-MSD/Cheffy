@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Sailec Medium.otf">
+            <string>Sailec-Medium</string>
+        </array>
+        <array key="Sailec Regular.otf">
+            <string>Sailec</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProfileFoodItemCell" id="gTV-IL-0wX" customClass="ProfileFoodItemCell" customModule="Chef" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="361" height="291"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="361" height="291"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kTn-m8-qCM" userLabel="containerView">
+                        <rect key="frame" x="0.0" y="0.0" width="361" height="291"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nbi-fF-fyA">
+                                <rect key="frame" x="10" y="0.0" width="341" height="203.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_food_one" translatesAutoresizingMaskIntoConstraints="NO" id="PXl-EP-AZh">
+                                <rect key="frame" x="10" y="0.0" width="341" height="203.5"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="-5" height="-5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_favorite_checked" translatesAutoresizingMaskIntoConstraints="NO" id="7Xg-vG-pgY">
+                                <rect key="frame" x="301" y="153.5" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="KIX-mk-Wwu"/>
+                                    <constraint firstAttribute="width" constant="60" id="ZnB-0E-KRb"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2t-uC-Vrm">
+                                <rect key="frame" x="10" y="213.5" width="40" height="17"/>
+                                <fontDescription key="fontDescription" name="Sailec-Medium" family="Sailec" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_star" translatesAutoresizingMaskIntoConstraints="NO" id="SUb-TC-haO">
+                                <rect key="frame" x="10" y="240.5" width="12" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="12" id="fqj-hl-hQC"/>
+                                    <constraint firstAttribute="height" constant="12" id="qn4-hN-aaj"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.9(5.00)" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JiV-V8-PGF">
+                                <rect key="frame" x="24" y="240.5" width="40" height="12.5"/>
+                                <fontDescription key="fontDescription" name="Sailec" family="Sailec" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_clock" translatesAutoresizingMaskIntoConstraints="NO" id="tEA-4w-WNx">
+                                <rect key="frame" x="69" y="240.5" width="12" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="12" id="4EM-To-gcU"/>
+                                    <constraint firstAttribute="height" constant="12" id="Trf-Ao-o3w"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25-20 min" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WuF-wq-GGL">
+                                <rect key="frame" x="83" y="240.5" width="47.5" height="12.5"/>
+                                <fontDescription key="fontDescription" name="Sailec" family="Sailec" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_car" translatesAutoresizingMaskIntoConstraints="NO" id="7Ig-I0-fvs">
+                                <rect key="frame" x="135.5" y="240.5" width="12" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="SSx-eg-i30"/>
+                                    <constraint firstAttribute="width" constant="12" id="ynR-HA-ea5"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delivery" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37P-B4-nJQ">
+                                <rect key="frame" x="149.5" y="240.5" width="39" height="12.5"/>
+                                <fontDescription key="fontDescription" name="Sailec" family="Sailec" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJg-3n-Ppb">
+                                <rect key="frame" x="301" y="153.5" width="60" height="60"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="7Ig-I0-fvs" firstAttribute="centerY" secondItem="WuF-wq-GGL" secondAttribute="centerY" id="1pz-Uc-kks"/>
+                            <constraint firstItem="7Xg-vG-pgY" firstAttribute="bottom" secondItem="PXl-EP-AZh" secondAttribute="bottom" constant="10" id="2DC-Bb-t22"/>
+                            <constraint firstItem="SUb-TC-haO" firstAttribute="top" secondItem="X2t-uC-Vrm" secondAttribute="bottom" constant="10" id="2wM-6r-5Sa"/>
+                            <constraint firstItem="PXl-EP-AZh" firstAttribute="leading" secondItem="kTn-m8-qCM" secondAttribute="leading" constant="10" id="3wj-ND-Jab"/>
+                            <constraint firstItem="7Ig-I0-fvs" firstAttribute="leading" secondItem="WuF-wq-GGL" secondAttribute="trailing" constant="5" id="5gp-Jm-R79"/>
+                            <constraint firstItem="ZJg-3n-Ppb" firstAttribute="trailing" secondItem="7Xg-vG-pgY" secondAttribute="trailing" id="6qo-VW-aou"/>
+                            <constraint firstItem="7Xg-vG-pgY" firstAttribute="trailing" secondItem="PXl-EP-AZh" secondAttribute="trailing" constant="10" id="7Mm-e6-U0m"/>
+                            <constraint firstItem="PXl-EP-AZh" firstAttribute="height" secondItem="kTn-m8-qCM" secondAttribute="height" multiplier="0.7" id="H8W-f9-gxs"/>
+                            <constraint firstItem="X2t-uC-Vrm" firstAttribute="leading" secondItem="kTn-m8-qCM" secondAttribute="leading" constant="10" id="Lvc-gU-42F"/>
+                            <constraint firstItem="PXl-EP-AZh" firstAttribute="top" secondItem="kTn-m8-qCM" secondAttribute="top" id="Mdd-t1-Y66"/>
+                            <constraint firstItem="37P-B4-nJQ" firstAttribute="leading" secondItem="7Ig-I0-fvs" secondAttribute="trailing" constant="2" id="ONn-rl-Af6"/>
+                            <constraint firstItem="SUb-TC-haO" firstAttribute="leading" secondItem="kTn-m8-qCM" secondAttribute="leading" constant="10" id="OYF-RI-1zX"/>
+                            <constraint firstItem="ZJg-3n-Ppb" firstAttribute="leading" secondItem="7Xg-vG-pgY" secondAttribute="leading" id="Orw-kg-qNF"/>
+                            <constraint firstItem="X2t-uC-Vrm" firstAttribute="top" secondItem="PXl-EP-AZh" secondAttribute="bottom" constant="10" id="UT5-Fi-bGF"/>
+                            <constraint firstItem="WuF-wq-GGL" firstAttribute="centerY" secondItem="tEA-4w-WNx" secondAttribute="centerY" id="Wtk-da-S9x"/>
+                            <constraint firstItem="ZJg-3n-Ppb" firstAttribute="bottom" secondItem="7Xg-vG-pgY" secondAttribute="bottom" id="aTT-lp-Ajy"/>
+                            <constraint firstItem="JiV-V8-PGF" firstAttribute="leading" secondItem="SUb-TC-haO" secondAttribute="trailing" constant="2" id="brq-ob-dRd"/>
+                            <constraint firstItem="tEA-4w-WNx" firstAttribute="leading" secondItem="JiV-V8-PGF" secondAttribute="trailing" constant="5" id="dZr-9i-pvw"/>
+                            <constraint firstItem="nbi-fF-fyA" firstAttribute="top" secondItem="PXl-EP-AZh" secondAttribute="top" id="daz-qT-A9l"/>
+                            <constraint firstItem="nbi-fF-fyA" firstAttribute="height" secondItem="PXl-EP-AZh" secondAttribute="height" id="e0v-ew-FOZ"/>
+                            <constraint firstItem="tEA-4w-WNx" firstAttribute="centerY" secondItem="JiV-V8-PGF" secondAttribute="centerY" id="eml-tG-3Ue"/>
+                            <constraint firstItem="JiV-V8-PGF" firstAttribute="centerY" secondItem="SUb-TC-haO" secondAttribute="centerY" id="ew3-Fx-9io"/>
+                            <constraint firstItem="nbi-fF-fyA" firstAttribute="leading" secondItem="PXl-EP-AZh" secondAttribute="leading" id="jrt-z1-Khy"/>
+                            <constraint firstAttribute="trailing" secondItem="PXl-EP-AZh" secondAttribute="trailing" constant="10" id="kNY-92-MZZ"/>
+                            <constraint firstItem="37P-B4-nJQ" firstAttribute="centerY" secondItem="7Ig-I0-fvs" secondAttribute="centerY" id="qtb-Jm-HiG"/>
+                            <constraint firstItem="ZJg-3n-Ppb" firstAttribute="top" secondItem="7Xg-vG-pgY" secondAttribute="top" id="tck-8a-zDd"/>
+                            <constraint firstItem="nbi-fF-fyA" firstAttribute="width" secondItem="PXl-EP-AZh" secondAttribute="width" id="y9y-JF-5lv"/>
+                            <constraint firstItem="WuF-wq-GGL" firstAttribute="leading" secondItem="tEA-4w-WNx" secondAttribute="trailing" constant="2" id="zUv-Xo-aVx"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="kTn-m8-qCM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="God-sP-BQF"/>
+                <constraint firstAttribute="bottom" secondItem="kTn-m8-qCM" secondAttribute="bottom" id="Mfd-ue-hXs"/>
+                <constraint firstItem="kTn-m8-qCM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="h3x-97-To5"/>
+                <constraint firstAttribute="trailing" secondItem="kTn-m8-qCM" secondAttribute="trailing" id="t9J-ug-9hq"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="361" height="291"/>
+            <connections>
+                <outlet property="btnFav" destination="ZJg-3n-Ppb" id="sCs-rA-UM6"/>
+                <outlet property="ivFavoriteImage" destination="7Xg-vG-pgY" id="ojn-X3-DSt"/>
+                <outlet property="ivFeatureImage" destination="PXl-EP-AZh" id="0fF-LQ-fXX"/>
+                <outlet property="lblDelivery" destination="37P-B4-nJQ" id="8DO-Og-79g"/>
+                <outlet property="lblFoodName" destination="X2t-uC-Vrm" id="KxD-CJ-YIl"/>
+                <outlet property="lblRating" destination="JiV-V8-PGF" id="OoT-Rg-3nc"/>
+                <outlet property="lblTimeline" destination="WuF-wq-GGL" id="Eje-iM-SzM"/>
+                <outlet property="uivContainer" destination="kTn-m8-qCM" id="Xyy-df-4MT"/>
+                <outlet property="uivFeaturedImageContainer" destination="nbi-fF-fyA" id="kwu-l3-bJF"/>
+            </connections>
+            <point key="canvasLocation" x="363.04347826086962" y="169.75446428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_car" width="14" height="8.5"/>
+        <image name="ic_clock" width="11.5" height="11.5"/>
+        <image name="ic_favorite_checked" width="76" height="73.5"/>
+        <image name="ic_star" width="12.5" height="11.5"/>
+        <image name="img_food_one" width="250" height="166.5"/>
+    </resources>
+</document>

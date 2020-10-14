@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Sailec Medium.otf">
+            <string>Sailec-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Review_Cell" id="KGk-i7-Jjw" customClass="Review_Cell" customModule="Chef" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z2r-Hu-Y5c" userLabel="ReviewItemView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ync-s5-6mZ">
+                                <rect key="frame" x="10" y="10" width="50" height="50"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="2hd-ie-ueS"/>
+                                    <constraint firstAttribute="width" secondItem="ync-s5-6mZ" secondAttribute="height" multiplier="1:1" id="qTe-SI-Rt3"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LYR-oS-Yhk">
+                                <rect key="frame" x="80" y="15" width="60" height="15.5"/>
+                                <fontDescription key="fontDescription" name="Sailec-Medium" family="Sailec" pointSize="13"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l61-Au-eKg" customClass="CosmosView" customModule="Cosmos">
+                                <rect key="frame" x="80" y="40.5" width="79" height="15"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                        <color key="value" red="0.91764705879999997" green="0.1137254902" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                        <color key="value" red="0.91764705879999997" green="0.1137254902" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starMargin">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1e-6h-Lxa">
+                                <rect key="frame" x="80" y="64" width="250" height="55"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="CQ3-Ir-04z"/>
+                                    <constraint firstAttribute="height" constant="55" id="jLV-DM-UiY"/>
+                                </constraints>
+                                <string key="text">The food at Mashiko is amazing. Everyone else already said everything about 
+</string>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LYR-oS-Yhk" firstAttribute="top" secondItem="ync-s5-6mZ" secondAttribute="top" constant="5" id="5wF-E5-2ug"/>
+                            <constraint firstItem="ync-s5-6mZ" firstAttribute="top" secondItem="Z2r-Hu-Y5c" secondAttribute="top" constant="10" id="Sfa-GE-CdX"/>
+                            <constraint firstItem="ync-s5-6mZ" firstAttribute="leading" secondItem="Z2r-Hu-Y5c" secondAttribute="leading" constant="10" id="TP1-8P-y3A"/>
+                            <constraint firstItem="x1e-6h-Lxa" firstAttribute="top" secondItem="l61-Au-eKg" secondAttribute="bottom" constant="8.5" id="U7f-kM-qdC"/>
+                            <constraint firstItem="LYR-oS-Yhk" firstAttribute="leading" secondItem="ync-s5-6mZ" secondAttribute="trailing" constant="20" id="ahY-C9-HXZ"/>
+                            <constraint firstItem="l61-Au-eKg" firstAttribute="top" secondItem="LYR-oS-Yhk" secondAttribute="bottom" constant="10" id="hYD-9i-YrC"/>
+                            <constraint firstItem="l61-Au-eKg" firstAttribute="leading" secondItem="LYR-oS-Yhk" secondAttribute="leading" id="l6A-ll-zk4"/>
+                            <constraint firstItem="x1e-6h-Lxa" firstAttribute="leading" secondItem="l61-Au-eKg" secondAttribute="leading" id="tt8-3Z-L8g"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Z2r-Hu-Y5c" secondAttribute="trailing" id="Nky-C3-LXQ"/>
+                    <constraint firstItem="Z2r-Hu-Y5c" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="aAW-Du-viN"/>
+                    <constraint firstAttribute="bottom" secondItem="Z2r-Hu-Y5c" secondAttribute="bottom" id="jyr-IP-PHc"/>
+                    <constraint firstItem="Z2r-Hu-Y5c" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="xFh-ze-qK1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblReviewUserNameOne" destination="LYR-oS-Yhk" id="MHO-ZM-vN7"/>
+                <outlet property="tfCommentOne" destination="x1e-6h-Lxa" id="1bd-Nx-qy7"/>
+                <outlet property="uivRatingBarOne" destination="l61-Au-eKg" id="CNp-Er-gmh"/>
+                <outlet property="userIconOne" destination="ync-s5-6mZ" id="bsA-fK-8h7"/>
+            </connections>
+            <point key="canvasLocation" x="133" y="145"/>
+        </tableViewCell>
+    </objects>
+</document>

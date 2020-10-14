@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ReceiptImageCell" id="gTV-IL-0wX" customClass="ReceiptImageCell" customModule="Chef" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="322"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="250" height="322"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WpL-jU-T01">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="322"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Receipts by target" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rmx-vN-8kL">
+                                <rect key="frame" x="45.5" y="50" width="159" height="23"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="img_receipts" translatesAutoresizingMaskIntoConstraints="NO" id="6lD-vb-58B">
+                                <rect key="frame" x="20" y="93" width="210" height="209"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6lD-vb-58B" firstAttribute="leading" secondItem="WpL-jU-T01" secondAttribute="leading" constant="20" id="0Ca-Oi-dQD"/>
+                            <constraint firstItem="6lD-vb-58B" firstAttribute="top" secondItem="Rmx-vN-8kL" secondAttribute="bottom" constant="20" id="1Gv-L9-jjO"/>
+                            <constraint firstAttribute="trailing" secondItem="6lD-vb-58B" secondAttribute="trailing" constant="20" id="KK9-oa-NZ1"/>
+                            <constraint firstItem="Rmx-vN-8kL" firstAttribute="top" secondItem="WpL-jU-T01" secondAttribute="top" constant="50" id="T6U-Qd-tga"/>
+                            <constraint firstAttribute="bottom" secondItem="6lD-vb-58B" secondAttribute="bottom" constant="20" id="e68-yk-hTa"/>
+                            <constraint firstItem="Rmx-vN-8kL" firstAttribute="centerX" secondItem="WpL-jU-T01" secondAttribute="centerX" id="o6H-sG-HVq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="WpL-jU-T01" secondAttribute="trailing" id="IrN-fs-tak"/>
+                <constraint firstItem="WpL-jU-T01" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="QMr-Vd-uKl"/>
+                <constraint firstItem="WpL-jU-T01" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="sQg-i8-s7Y"/>
+                <constraint firstAttribute="bottom" secondItem="WpL-jU-T01" secondAttribute="bottom" id="uqu-GY-U7s"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="250" height="322"/>
+            <connections>
+                <outlet property="ivReceiptImage" destination="6lD-vb-58B" id="Zt3-kM-abJ"/>
+                <outlet property="lblReceiptTitle" destination="Rmx-vN-8kL" id="afG-QX-qVe"/>
+                <outlet property="uivContainer" destination="WpL-jU-T01" id="Cio-bn-fJP"/>
+            </connections>
+            <point key="canvasLocation" x="282.60869565217394" y="170.08928571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="img_receipts" width="310" height="369"/>
+    </resources>
+</document>

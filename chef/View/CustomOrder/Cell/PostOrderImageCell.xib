@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PostOrderImageCell" id="gTV-IL-0wX" customClass="PostOrderImageCell" customModule="chef" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="236" height="161"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="236" height="161"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UOy-vs-bS0" userLabel="ContainerView">
+                        <rect key="frame" x="0.0" y="0.0" width="236" height="161"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gVV-3r-g9T">
+                                <rect key="frame" x="0.0" y="0.0" width="236" height="161"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gVV-3r-g9T" firstAttribute="leading" secondItem="UOy-vs-bS0" secondAttribute="leading" id="G9s-XO-vyl"/>
+                            <constraint firstItem="gVV-3r-g9T" firstAttribute="top" secondItem="UOy-vs-bS0" secondAttribute="top" id="Hyi-WL-Ymh"/>
+                            <constraint firstAttribute="trailing" secondItem="gVV-3r-g9T" secondAttribute="trailing" id="OLL-Dl-pVT"/>
+                            <constraint firstAttribute="bottom" secondItem="gVV-3r-g9T" secondAttribute="bottom" id="r83-wW-Xpk"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="UOy-vs-bS0" secondAttribute="trailing" id="2I1-Zd-Avv"/>
+                <constraint firstAttribute="bottom" secondItem="UOy-vs-bS0" secondAttribute="bottom" id="5UL-lL-MaM"/>
+                <constraint firstItem="UOy-vs-bS0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="SsI-xt-w4g"/>
+                <constraint firstItem="UOy-vs-bS0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="g6c-hQ-Slq"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="236" height="161"/>
+            <connections>
+                <outlet property="ivOrderImage" destination="gVV-3r-g9T" id="5gi-Yl-sc3"/>
+                <outlet property="uivContainerView" destination="UOy-vs-bS0" id="r2u-ck-dm6"/>
+            </connections>
+            <point key="canvasLocation" x="272.46376811594206" y="122.87946428571428"/>
+        </collectionViewCell>
+    </objects>
+</document>

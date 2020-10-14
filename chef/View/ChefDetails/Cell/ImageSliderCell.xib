@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ImageSliderCell" customModule="chef" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="305" height="202"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="305" height="202"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0L1-VK-Slg">
+                        <rect key="frame" x="0.0" y="0.0" width="305" height="202"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O81-Ut-vyb">
+                                <rect key="frame" x="0.0" y="0.0" width="305" height="202"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </imageView>
+                            <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hu2-RI-lDQ" userLabel="overlay ">
+                                <rect key="frame" x="0.0" y="0.0" width="305" height="202"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="O81-Ut-vyb" firstAttribute="centerY" secondItem="0L1-VK-Slg" secondAttribute="centerY" id="0ep-iu-GzH"/>
+                            <constraint firstItem="O81-Ut-vyb" firstAttribute="centerX" secondItem="0L1-VK-Slg" secondAttribute="centerX" id="7dc-Qc-My8"/>
+                            <constraint firstItem="Hu2-RI-lDQ" firstAttribute="top" secondItem="0L1-VK-Slg" secondAttribute="top" id="BuF-H7-edD"/>
+                            <constraint firstAttribute="bottom" secondItem="O81-Ut-vyb" secondAttribute="bottom" id="Whp-Rk-S0e"/>
+                            <constraint firstAttribute="trailing" secondItem="O81-Ut-vyb" secondAttribute="trailing" id="f2x-jJ-85L"/>
+                            <constraint firstItem="O81-Ut-vyb" firstAttribute="top" secondItem="0L1-VK-Slg" secondAttribute="top" id="hhm-qP-cYO"/>
+                            <constraint firstItem="Hu2-RI-lDQ" firstAttribute="leading" secondItem="0L1-VK-Slg" secondAttribute="leading" id="lEl-Zr-Lzh"/>
+                            <constraint firstAttribute="trailing" secondItem="Hu2-RI-lDQ" secondAttribute="trailing" id="qTK-nQ-zGx"/>
+                            <constraint firstAttribute="bottom" secondItem="Hu2-RI-lDQ" secondAttribute="bottom" id="t10-8u-4LP"/>
+                            <constraint firstItem="O81-Ut-vyb" firstAttribute="leading" secondItem="0L1-VK-Slg" secondAttribute="leading" id="xbB-8F-63V"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="0L1-VK-Slg" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="5my-mv-al5"/>
+                <constraint firstAttribute="trailing" secondItem="0L1-VK-Slg" secondAttribute="trailing" id="6Kk-9C-E7c"/>
+                <constraint firstItem="0L1-VK-Slg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="MI0-u6-hqK"/>
+                <constraint firstItem="0L1-VK-Slg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="VmB-VA-HmS"/>
+                <constraint firstAttribute="bottom" secondItem="0L1-VK-Slg" secondAttribute="bottom" id="ZYW-UA-7Az"/>
+                <constraint firstItem="0L1-VK-Slg" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="xu8-w9-7Ap"/>
+            </constraints>
+            <size key="customSize" width="305" height="202"/>
+            <connections>
+                <outlet property="ivSliderImage" destination="O81-Ut-vyb" id="PZu-F2-1cm"/>
+                <outlet property="uivContainer" destination="0L1-VK-Slg" id="eUm-hc-W4B"/>
+            </connections>
+            <point key="canvasLocation" x="322.46376811594206" y="139.28571428571428"/>
+        </collectionViewCell>
+    </objects>
+</document>

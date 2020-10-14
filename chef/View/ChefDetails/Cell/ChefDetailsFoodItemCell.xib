@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Sailec Regular.otf">
+            <string>Sailec</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ChefDetailsFoodItemCell" id="gTV-IL-0wX" customClass="ChefDetailsFoodItemCell" customModule="Chef" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="203"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="203"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ib7-Be-PHh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="203"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grilled salmon" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZG7-oV-mnC">
+                                <rect key="frame" x="15" y="20" width="215" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Season salmon fillets with lemon pepper, garlic powder, and salt. In a small bowl, " lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9eP-1l-laC">
+                                <rect key="frame" x="15" y="45.5" width="215" height="50.5"/>
+                                <fontDescription key="fontDescription" name="Sailec" family="Sailec" pointSize="14"/>
+                                <color key="textColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_food_four" translatesAutoresizingMaskIntoConstraints="NO" id="sY9-Au-bb4">
+                                <rect key="frame" x="240" y="20" width="120" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="iFc-lK-dz5"/>
+                                    <constraint firstAttribute="height" constant="80" id="mp1-mF-XO2"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$120.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGY-Td-26J">
+                                <rect key="frame" x="15" y="120" width="53.5" height="16"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <color key="textColor" red="0.91764705879999997" green="0.1137254902" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_clock" translatesAutoresizingMaskIntoConstraints="NO" id="cYF-pe-ODN">
+                                <rect key="frame" x="98.5" y="120.5" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="EDZ-Qh-OtF"/>
+                                    <constraint firstAttribute="width" constant="15" id="Sz2-FV-gN9"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10-20 min" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGK-KH-MNb">
+                                <rect key="frame" x="116.5" y="121" width="56" height="14"/>
+                                <fontDescription key="fontDescription" name="Sailec" family="Sailec" pointSize="12"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_car" translatesAutoresizingMaskIntoConstraints="NO" id="jwZ-5l-vwK">
+                                <rect key="frame" x="202.5" y="120.5" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="IXl-he-iSp"/>
+                                    <constraint firstAttribute="height" constant="15" id="ySy-A4-3YU"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delivery" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pxz-eM-aEK">
+                                <rect key="frame" x="220.5" y="121" width="47" height="14"/>
+                                <fontDescription key="fontDescription" name="Sailec" family="Sailec" pointSize="12"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hu1-EZ-rnB">
+                                <rect key="frame" x="15" y="201" width="345" height="1"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="YbQ-yd-L48"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iea-VQ-krI">
+                                <rect key="frame" x="287.5" y="114" width="60" height="28"/>
+                                <color key="backgroundColor" red="0.19118190291141965" green="0.61837722081218272" blue="0.099242472865115922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="J3g-UB-cDK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <state key="normal" title="Free">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Hu1-EZ-rnB" secondAttribute="trailing" constant="15" id="0CB-0J-J7F"/>
+                            <constraint firstItem="Pxz-eM-aEK" firstAttribute="centerY" secondItem="jwZ-5l-vwK" secondAttribute="centerY" id="1Fg-he-qbD"/>
+                            <constraint firstItem="sY9-Au-bb4" firstAttribute="top" secondItem="ib7-Be-PHh" secondAttribute="top" constant="20" id="1Gw-C0-mcL"/>
+                            <constraint firstItem="9eP-1l-laC" firstAttribute="top" secondItem="ZG7-oV-mnC" secondAttribute="bottom" constant="5" id="950-7A-T05"/>
+                            <constraint firstItem="AGK-KH-MNb" firstAttribute="centerY" secondItem="cYF-pe-ODN" secondAttribute="centerY" id="A9t-ii-CG5"/>
+                            <constraint firstItem="sY9-Au-bb4" firstAttribute="leading" secondItem="ZG7-oV-mnC" secondAttribute="trailing" constant="10" id="GkT-Ya-YTe"/>
+                            <constraint firstItem="BGY-Td-26J" firstAttribute="leading" secondItem="ib7-Be-PHh" secondAttribute="leading" constant="15" id="HhL-IG-Cqm"/>
+                            <constraint firstItem="AGK-KH-MNb" firstAttribute="leading" secondItem="cYF-pe-ODN" secondAttribute="trailing" constant="3" id="IbU-xg-sWu"/>
+                            <constraint firstItem="Iea-VQ-krI" firstAttribute="centerY" secondItem="Pxz-eM-aEK" secondAttribute="centerY" id="KDX-yt-lfb"/>
+                            <constraint firstItem="sY9-Au-bb4" firstAttribute="leading" secondItem="9eP-1l-laC" secondAttribute="trailing" constant="10" id="N6v-fJ-W25"/>
+                            <constraint firstItem="jwZ-5l-vwK" firstAttribute="leading" secondItem="AGK-KH-MNb" secondAttribute="trailing" constant="30" id="Qx8-p0-7fB"/>
+                            <constraint firstItem="BGY-Td-26J" firstAttribute="top" secondItem="sY9-Au-bb4" secondAttribute="bottom" constant="20" id="TJr-lE-WuB"/>
+                            <constraint firstItem="cYF-pe-ODN" firstAttribute="leading" secondItem="BGY-Td-26J" secondAttribute="trailing" constant="30" id="Xib-6F-JeH"/>
+                            <constraint firstItem="9eP-1l-laC" firstAttribute="leading" secondItem="ZG7-oV-mnC" secondAttribute="leading" id="Yjl-2k-r5m"/>
+                            <constraint firstItem="Hu1-EZ-rnB" firstAttribute="leading" secondItem="ib7-Be-PHh" secondAttribute="leading" constant="15" id="YtL-nO-3mL"/>
+                            <constraint firstItem="cYF-pe-ODN" firstAttribute="centerY" secondItem="BGY-Td-26J" secondAttribute="centerY" id="Z9g-8z-6ZT"/>
+                            <constraint firstItem="Iea-VQ-krI" firstAttribute="leading" secondItem="Pxz-eM-aEK" secondAttribute="trailing" constant="20" id="ZxF-3f-beU"/>
+                            <constraint firstAttribute="bottom" secondItem="Hu1-EZ-rnB" secondAttribute="bottom" constant="1" id="fUT-sV-ZOe"/>
+                            <constraint firstItem="ZG7-oV-mnC" firstAttribute="leading" secondItem="ib7-Be-PHh" secondAttribute="leading" constant="15" id="gx0-f2-p0d"/>
+                            <constraint firstItem="jwZ-5l-vwK" firstAttribute="centerY" secondItem="AGK-KH-MNb" secondAttribute="centerY" id="iHL-sN-eab"/>
+                            <constraint firstItem="ZG7-oV-mnC" firstAttribute="top" secondItem="ib7-Be-PHh" secondAttribute="top" constant="20" id="liQ-oC-hfD"/>
+                            <constraint firstAttribute="trailing" secondItem="sY9-Au-bb4" secondAttribute="trailing" constant="15" id="n4g-nC-Lh2"/>
+                            <constraint firstItem="Pxz-eM-aEK" firstAttribute="leading" secondItem="jwZ-5l-vwK" secondAttribute="trailing" constant="3" id="qRh-Zv-mRQ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ib7-Be-PHh" secondAttribute="trailing" id="Qgz-Bh-Hun"/>
+                <constraint firstAttribute="bottom" secondItem="ib7-Be-PHh" secondAttribute="bottom" id="T6D-ps-XxE"/>
+                <constraint firstItem="ib7-Be-PHh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ZxU-C7-Rne"/>
+                <constraint firstItem="ib7-Be-PHh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="i9J-Y3-8Kt"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="375" height="203"/>
+            <connections>
+                <outlet property="btnOffer" destination="Iea-VQ-krI" id="RK2-FG-41f"/>
+                <outlet property="ivFetauredImage" destination="sY9-Au-bb4" id="Tbb-hn-vWi"/>
+                <outlet property="lblDeliveryTime" destination="AGK-KH-MNb" id="rqx-f1-OPm"/>
+                <outlet property="lblDeliveryType" destination="Pxz-eM-aEK" id="p7E-wv-YN0"/>
+                <outlet property="lblDescription" destination="9eP-1l-laC" id="wHw-VU-lnW"/>
+                <outlet property="lblPrice" destination="BGY-Td-26J" id="zkk-4S-8sq"/>
+                <outlet property="lblTitle" destination="ZG7-oV-mnC" id="2Bo-Cp-Hm5"/>
+                <outlet property="uivContainer" destination="ib7-Be-PHh" id="ufm-hX-ueq"/>
+            </connections>
+            <point key="canvasLocation" x="371.73913043478262" y="138.95089285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_car" width="14" height="8.5"/>
+        <image name="ic_clock" width="11.5" height="11.5"/>
+        <image name="img_food_four" width="1350" height="900"/>
+    </resources>
+</document>

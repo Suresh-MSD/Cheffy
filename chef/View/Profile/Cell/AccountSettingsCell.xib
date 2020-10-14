@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Sailec Regular.otf">
+            <string>Sailec</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AccountSettingsCell" id="gTV-IL-0wX" customClass="AccountSettingsCell" customModule="Chef" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="237" height="61"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="237" height="61"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tdO-JD-FzG">
+                        <rect key="frame" x="0.0" y="0.0" width="237" height="61"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_account_black" translatesAutoresizingMaskIntoConstraints="NO" id="gbi-MV-OVz">
+                                <rect key="frame" x="15" y="22" width="17" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="pmr-A6-dHX"/>
+                                    <constraint firstAttribute="width" constant="17" id="zks-ws-Qrf"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Edit" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VPv-SI-CoD">
+                                <rect key="frame" x="42" y="21" width="99" height="19.5"/>
+                                <fontDescription key="fontDescription" name="Sailec" family="Sailec" pointSize="16"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rhc-ge-7jW">
+                                <rect key="frame" x="0.0" y="58" width="237" height="1"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="cJg-7E-vCq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VPv-SI-CoD" firstAttribute="leading" secondItem="gbi-MV-OVz" secondAttribute="trailing" constant="10" id="BsP-19-NZt"/>
+                            <constraint firstAttribute="trailing" secondItem="Rhc-ge-7jW" secondAttribute="trailing" id="LRu-oz-1gZ"/>
+                            <constraint firstItem="VPv-SI-CoD" firstAttribute="centerY" secondItem="gbi-MV-OVz" secondAttribute="centerY" id="Wks-PE-Kxc"/>
+                            <constraint firstItem="Rhc-ge-7jW" firstAttribute="leading" secondItem="tdO-JD-FzG" secondAttribute="leading" id="X3y-h6-jg1"/>
+                            <constraint firstItem="gbi-MV-OVz" firstAttribute="centerY" secondItem="tdO-JD-FzG" secondAttribute="centerY" id="Ykf-QB-qD0"/>
+                            <constraint firstItem="gbi-MV-OVz" firstAttribute="leading" secondItem="tdO-JD-FzG" secondAttribute="leading" constant="15" id="vax-GC-KMW"/>
+                            <constraint firstAttribute="bottom" secondItem="Rhc-ge-7jW" secondAttribute="bottom" constant="2" id="zoj-XJ-hRc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="tdO-JD-FzG" secondAttribute="bottom" id="7l3-UG-KgT"/>
+                <constraint firstItem="tdO-JD-FzG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="L7B-zy-D57"/>
+                <constraint firstItem="tdO-JD-FzG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="d7e-Kl-lUI"/>
+                <constraint firstAttribute="trailing" secondItem="tdO-JD-FzG" secondAttribute="trailing" id="dbx-MW-CT7"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="237" height="61"/>
+            <connections>
+                <outlet property="img_width_contraint" destination="zks-ws-Qrf" id="u3K-Fe-zkx"/>
+                <outlet property="ivMenuIcon" destination="gbi-MV-OVz" id="Cxg-DS-Xcp"/>
+                <outlet property="lblMenuTitle" destination="VPv-SI-CoD" id="NbC-cD-IzB"/>
+                <outlet property="spacing_constraint" destination="BsP-19-NZt" id="JUO-Nh-YWc"/>
+                <outlet property="uivContainer" destination="tdO-JD-FzG" id="Chn-ak-cGa"/>
+            </connections>
+            <point key="canvasLocation" x="273.1884057971015" y="93.415178571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_account_black" width="18" height="20.5"/>
+    </resources>
+</document>

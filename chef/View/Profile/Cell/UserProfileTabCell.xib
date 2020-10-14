@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Sailec Medium.otf">
+            <string>Sailec-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UserProfileTabCell" id="gTV-IL-0wX" customClass="UserProfileTabCell" customModule="Chef" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="346" height="75"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="346" height="75"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oxT-Nn-sEn" userLabel="Container">
+                        <rect key="frame" x="0.0" y="0.0" width="346" height="75"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rH2-ey-596" userLabel="TabBarContainer">
+                                <rect key="frame" x="0.0" y="17.5" width="346" height="40"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZHY-SK-Wgr">
+                                        <rect key="frame" x="20" y="0.0" width="306" height="38"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naA-DD-qlM">
+                                                <rect key="frame" x="0.0" y="0.0" width="148" height="38"/>
+                                                <fontDescription key="fontDescription" name="Sailec-Medium" family="Sailec" pointSize="18"/>
+                                                <state key="normal" title="Your Favourite">
+                                                    <color key="titleColor" red="0.91764705879999997" green="0.1137254902" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onClickTabFavorite:" destination="gTV-IL-0wX" eventType="touchUpInside" id="SSV-jn-VsK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iS1-c3-o67">
+                                                <rect key="frame" x="158" y="0.0" width="148" height="38"/>
+                                                <fontDescription key="fontDescription" name="Sailec-Medium" family="Sailec" pointSize="18"/>
+                                                <state key="normal" title="Account Settings">
+                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onClickTabSettings:" destination="gTV-IL-0wX" eventType="touchUpInside" id="OyG-s9-LbD"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UfT-RX-GEx" userLabel="TabBarIndicatorContainer">
+                                        <rect key="frame" x="0.0" y="39" width="346" height="1"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m58-at-Diq">
+                                                <rect key="frame" x="20" y="0.0" width="148" height="1"/>
+                                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="m58-at-Diq" firstAttribute="centerY" secondItem="UfT-RX-GEx" secondAttribute="centerY" id="2Pu-kn-jJU"/>
+                                            <constraint firstItem="m58-at-Diq" firstAttribute="height" secondItem="UfT-RX-GEx" secondAttribute="height" id="IyG-Jf-dhn"/>
+                                            <constraint firstAttribute="height" constant="1" id="khL-4g-t0D"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="8vL-fv-A0g"/>
+                                    <constraint firstItem="UfT-RX-GEx" firstAttribute="leading" secondItem="rH2-ey-596" secondAttribute="leading" id="ASL-V1-WwW"/>
+                                    <constraint firstItem="m58-at-Diq" firstAttribute="width" secondItem="naA-DD-qlM" secondAttribute="width" id="FBa-2E-6UY"/>
+                                    <constraint firstItem="ZHY-SK-Wgr" firstAttribute="leading" secondItem="rH2-ey-596" secondAttribute="leading" constant="20" id="HtK-DZ-PjM"/>
+                                    <constraint firstItem="m58-at-Diq" firstAttribute="leading" secondItem="naA-DD-qlM" secondAttribute="leading" id="NtC-s9-XAg"/>
+                                    <constraint firstItem="ZHY-SK-Wgr" firstAttribute="top" secondItem="rH2-ey-596" secondAttribute="top" id="hty-Zu-Ad2"/>
+                                    <constraint firstAttribute="trailing" secondItem="UfT-RX-GEx" secondAttribute="trailing" id="oJC-Xq-BGj"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZHY-SK-Wgr" secondAttribute="trailing" constant="20" id="vyH-J8-0BD"/>
+                                    <constraint firstAttribute="bottom" secondItem="UfT-RX-GEx" secondAttribute="bottom" id="wkV-hL-WKZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZHY-SK-Wgr" secondAttribute="bottom" constant="2" id="ynH-Rh-Rc3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rH2-ey-596" firstAttribute="centerY" secondItem="oxT-Nn-sEn" secondAttribute="centerY" id="M0w-b9-IMy"/>
+                            <constraint firstItem="rH2-ey-596" firstAttribute="leading" secondItem="oxT-Nn-sEn" secondAttribute="leading" id="r0Q-Ff-G8s"/>
+                            <constraint firstAttribute="trailing" secondItem="rH2-ey-596" secondAttribute="trailing" id="sjh-XE-u8K"/>
+                            <constraint firstItem="rH2-ey-596" firstAttribute="centerX" secondItem="oxT-Nn-sEn" secondAttribute="centerX" id="tpV-ze-9pf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="oxT-Nn-sEn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="BYw-17-6Id"/>
+                <constraint firstItem="oxT-Nn-sEn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="DYb-Wr-UBM"/>
+                <constraint firstAttribute="trailing" secondItem="oxT-Nn-sEn" secondAttribute="trailing" id="SHm-wb-e34"/>
+                <constraint firstAttribute="bottom" secondItem="oxT-Nn-sEn" secondAttribute="bottom" id="Z9V-uM-YNU"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="346" height="75"/>
+            <connections>
+                <outlet property="btnFavorite" destination="naA-DD-qlM" id="lFL-8Z-jE9"/>
+                <outlet property="btnSettings" destination="iS1-c3-o67" id="set-1y-ne8"/>
+                <outlet property="uivTabBarIndicator" destination="m58-at-Diq" id="b48-4N-ER7"/>
+            </connections>
+            <point key="canvasLocation" x="352.17391304347831" y="98.102678571428569"/>
+        </collectionViewCell>
+    </objects>
+</document>
